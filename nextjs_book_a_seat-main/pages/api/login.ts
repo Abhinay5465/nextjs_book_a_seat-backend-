@@ -3,7 +3,7 @@ import {cors, runMiddleware} from '../../lib/db';
 import { NextApiRequest, NextApiResponse } from 'next/types';
 
 const fakeLogin = [
-  {user: "admin@123", pwd:"admin0", role:"admin"},
+  {user: "admin0", pwd:"admin0", role:"admin"},
   {user: "user1", pwd:"user1", role:"user"},
   {user: "user2", pwd:"user2", role:"user"},
   {user: "user3", pwd:"user3", role:"user"},
