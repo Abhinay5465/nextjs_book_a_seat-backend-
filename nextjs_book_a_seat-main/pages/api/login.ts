@@ -3,7 +3,7 @@ import {cors, runMiddleware} from '../../lib/db';
 import { NextApiRequest, NextApiResponse } from 'next/types';
 
 const fakeLogin = [
-  {user: "admin0", pwd:"admin0", role:"admin"},
+  {user: "admin8791", pwd:"admin8791", role:"admin"},
   {user: "user1", pwd:"user1", role:"user"},
   {user: "user2", pwd:"user2", role:"user"},
   {user: "user3", pwd:"user3", role:"user"},
@@ -21,7 +21,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   // temporary solution
   const foundItem = {user: req.body.user, pwd:"user1", role:"user"}
-  if (req.body.user == "admin0"){
+  if (req.body.user == "admin8791"){
     foundItem.role = 'admin';
   }
   // console.log('foundItem', foundItem);
